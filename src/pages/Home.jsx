@@ -1,19 +1,11 @@
 // src/pages/Home.jsx
 import React from 'react';
-import '../styles/Home.css';  // Ensure this import is present at the top of the file
+import './Home.css';  // Ensure this import is present at the top of the file
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div className="home">
-      {/* Navigation Bar */}
-      <nav className="navbar">
-        <ul>
-          <li><Link to="/" className="navbar-link">Home</Link></li>
-          <li><Link to="/about" className="navbar-link">About</Link></li>
-          <li><Link to="/songs" className="navbar-link">Songs</Link></li>
-        </ul>
-      </nav>
 
       {/* Hero Section */}
       <section className="hero">

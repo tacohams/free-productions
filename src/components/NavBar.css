@@ -1,0 +1,84 @@
+/* General Navbar Styles */
+
+/* Style for links */
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: #555;
+  }
+  
+  /* Navbar for larger screens (Top navbar) */
+  @media screen and (min-width: 769px) {
+    .navbar-top {
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: block; /* Ensure it's visible on large screens */
+    }
+  
+    .navbar-links-top {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navbar-links-top li {
+      margin: 0 1rem;
+    }
+  }
+  
+  /* Navbar for smaller screens (Bottom navbar) */
+  @media screen and (max-width: 768px) {
+    /* Hide the top navbar on mobile screens */
+    .navbar-top {
+      display: none; /* Hide the top navbar */
+    }
+  
+    /* Bottom navbar configuration */
+    .navbar-bottom {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      padding: 10px;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    .navbar-links-bottom {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navbar-links-bottom li {
+      margin: 0;
+    }
+  
+    .navbar-link {
+      color: white;
+      font-size: 24px; /* Larger icons for mobile */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .navbar-link:hover {
+      color: #f4a261; /* Accent color on hover */
+    }
+  }
+  

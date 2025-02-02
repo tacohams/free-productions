@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import Routes and Route
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Songs from './pages/Songs';
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <BrowserRouter basename={basename}>
+      <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

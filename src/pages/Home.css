@@ -17,34 +17,6 @@
     text-align: center;
   }
   
-  /* Navigation Bar */
-  .navbar {
-    background-color: #1f1f1f;  /* Dark background */
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .navbar-link {
-    color: #f5a623;  /* Accent color */
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-link:hover {
-    color: #fff;  /* Change color on hover */
-  }
-  
   /* Hero Section */
   .hero {
     background-image: url('https://example.com/your-image.jpg'); /* Replace with a dark cover image URL */
