@@ -6,7 +6,7 @@ import About from './pages/About';
 import Songs from './pages/Songs';
 
 function App() {
-  const basename = process.env.VITE_BASENAME || '';
+  const basename = process.env.NODE_ENV === 'production' ? '/free-productions' : '';
 
   return (
     <BrowserRouter basename={basename}>
